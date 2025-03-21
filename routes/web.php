@@ -68,5 +68,5 @@ Route::get('/', function () {
 
 Route::get('/tasks/{id}', function ($id) {
     $task = Task::findOrFail($id);
-    return view('details',['task'=>$task]);
+    return view('detail',['task'=>$task]);
 })->name('tasks.detail');    
